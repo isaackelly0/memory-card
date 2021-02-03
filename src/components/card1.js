@@ -1,13 +1,17 @@
 import React, {useState} from "react";
-const Card1 = () => {
-    const [check, setCheck] = useState("Check");
+const Card1 = (props) => {
+    const [check, setCheck] = useState(true);
+
+    const callBack = () => {
+        changeCheck()
+        check ? props.fn(true) : props.fn(false)
+    };
     const changeCheck = () => {
-        setCheck("Uncheck");
+        setCheck(false);
     }
     return(
         <div>
-            <h1>{check}</h1>
-            <button onClick={changeCheck}>Change</button>
+            <button onClick={callBack}>Change</button>
         </div>
     )
 }

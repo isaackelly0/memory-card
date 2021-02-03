@@ -5,7 +5,7 @@ import Card1 from "./components/card1"
 class App extends Component {
   constructor(){
     super()
-    this.state = {score: 0, bestScore: 8, cards: []};
+    this.state = {score: 0, bestScore: 0, cards: []};
     this.randomize = (arr) => {
       //create a random assortment of cards
       //setState cards
@@ -35,7 +35,7 @@ class App extends Component {
 
   };
   componentDidMount(){
-    this.randomize(this.cards)
+    this.randomize(this.state.cards)
     //assign cards to "deck"
   }
   componentDidUpdate(){
@@ -49,9 +49,13 @@ class App extends Component {
     <div className="App">
       <header><h1>{this.state.score}</h1><h1>{this.state.bestScore}</h1></header>
       <span className="deck">
-        <button onClick={() => {return this.handleChange && this.scoreTracker(true)}}>CLICK ME</button>
-        <button onClick={() => {return this.handleChange && this.scoreTracker(false)}}>NO, CLICK ME</button>
-        <Card1/>
+        <Card1 fn={this.scoreTracker}/>
+        <Card1 fn={this.scoreTracker}/>
+        <Card1 fn={this.scoreTracker}/>
+        <Card1 fn={this.scoreTracker}/>
+        <Card1 fn={this.scoreTracker}/>
+        <Card1 fn={this.scoreTracker}/>
+ 
       </span>
     </div>
   );}
