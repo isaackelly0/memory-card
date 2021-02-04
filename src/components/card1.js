@@ -1,16 +1,23 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 const Card1 = (props) => {
     const [check, setCheck] = useState(true);
-
+    //useEffect(
+      //  () => {if(props.status){setCheck(true)}}
+    //,[props.status])
+    // const reset = () =>{
+    //     return setCheck(true)
+    // }
     const callBack = () => {
         changeCheck()
         check ? props.fn(true) : props.fn(false)
     };
     const changeCheck = () => {
-        setCheck(false);
+        check ? setCheck(false): setCheck(true);
+        //setCheck(false)
     }
     return(
         <div>
+            <h1>{props.name}</h1>
             <button onClick={callBack}>Change</button>
         </div>
     )
