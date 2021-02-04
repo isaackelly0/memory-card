@@ -2,7 +2,7 @@ import './App.css';
 import React, {Component} from "react";
 import ReactDOM from 'react-dom';
 
-// import Card1 from "./components/card1"
+import Card1 from "./components/card1"
 import deck from "./components/card2"
 
 class App extends Component {
@@ -18,7 +18,7 @@ class App extends Component {
       }
     };
     this.state = {score: 0, bestScore: 0, 
-      cards: deck(this.scoreTracker, false)};
+      cards: deck(this.scoreTracker, true)};
     this.randomize = (arr) => {
       //create a random assortment of cards
       //setState cards
@@ -28,7 +28,8 @@ class App extends Component {
     this.reset = () => {
       //for if the score gets reset to zero
       //remount new deck with their initial state
-      this.setState({cards: deck(this.scoreTracker, false)}) && ReactDOM.unmountComponentAtNode(document.getElementById('deck')) && ReactDOM.render(this.state.cards, document.getElementById('deck'))
+      this.setState({cards: deck(this.scoreTracker, true)}) && ReactDOM.unmountComponentAtNode(document.getElementById('deck')) 
+      ReactDOM.render(this.state.cards, document.getElementById('deck'))
     }
     this.compareScore = (init, best) => {
       if(init > best){
@@ -37,7 +38,7 @@ class App extends Component {
     };
   };
   componentDidMount(){
-    this.randomize(this.state.cards)
+    //this.randomize(this.state.cards)
     //assign cards to "deck"
   }
   componentDidUpdate(){
@@ -48,10 +49,11 @@ class App extends Component {
     <div className="App">
       <header><h1>{this.state.score}</h1><h1>{this.state.bestScore}</h1></header>
       <span id="deck">
+      <Card1 fn={this.scoreTracker} status={true} name="mouth"/>
       </span>
     </div>
   );}
   
 }
-
+// {/* <Card1 fn={this.scoreTracker} status={true} name="mouth"/> */}
 export default App;

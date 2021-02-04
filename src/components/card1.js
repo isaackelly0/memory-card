@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react";
 const Card1 = (props) => {
     const [check, setCheck] = useState(true);
-    //useEffect(
-      //  () => {if(props.status){setCheck(true)}}
-    //,[props.status])
+    useEffect(
+       () => {return setCheck(true)}
+    ,[])
     // const reset = () =>{
     //     return setCheck(true)
     // }
