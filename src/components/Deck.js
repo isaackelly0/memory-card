@@ -1,11 +1,11 @@
 import Card from "./Card"
-const deck = callback => {
+const deck = (callback, shuffle) => {
     return [
-        <Card fn={callback} name="head"/>,
-        <Card fn={callback} name="shoulders"/>,
-        <Card fn={callback} name="knees"/>,
-        <Card fn={callback} name="and"/>,
-        <Card fn={callback} name="toes"/>
+        <Card fn={callback} sh={shuffle} name="head"/>,
+        <Card fn={callback}  sh={shuffle} name="shoulders"/>,
+        <Card fn={callback}  sh={shuffle} name="knees"/>,
+        <Card fn={callback}  sh={shuffle} name="and"/>,
+        <Card fn={callback}  sh={shuffle} name="toes"/>
     ]
 } 
 export default deck
