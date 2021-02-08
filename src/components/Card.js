@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 const Card = (props) => {
     const [check, setCheck] = useState(true);
+    useEffect(()=>{if (!check){props.sh()}}, [props, check])
     const callBack = () => {
         changeCheck()
         check ? props.fn(true) : props.fn(false)
