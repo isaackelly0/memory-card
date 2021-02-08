@@ -6,6 +6,7 @@ import Board from "./components/Board";
 class App extends Component {
   constructor(){
     super()
+    this.state = {score: 0, bestScore: 0};
     this.scoreTracker = (bool) => {
       if(bool){
         this.setState({score: this.state.score + 1})
@@ -15,7 +16,6 @@ class App extends Component {
         this.reset()
       }
     };
-    this.state = {score: 0, bestScore: 0};
     this.setBoard = (arr) => {
       ReactDOM.render(arr, document.getElementById('deck')) ;
     };
