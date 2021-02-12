@@ -38,7 +38,7 @@ class App extends Component {
   render(){return (
     <div className="App">
       <header><h1>{this.state.score}</h1><h1>{this.state.bestScore}</h1></header>
-      <span id="deck">
+      <span id="deck" className="container">
       </span>
     </div>
   );}
