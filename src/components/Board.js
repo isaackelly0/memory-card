@@ -1,12 +1,11 @@
 import React, {useState, useEffect} from "react";
 import deck from "./Deck";
 const Board = (props) => {
-    const [shuffle, setShuffle] = useState(0)
-    const clear = () => {
-        setShuffle(shuffle + 1);
-        console.log("stuff")
+    const [table, setTable] = useState([]);
+    const change = (key) =>{
+        setTable(table => [...table, key])
     }
-    const [cards, setCards] = useState(deck(props.fn, clear))    
+    const [cards, setCards] = useState(deck(props.fn, change))    
     const random = () =>{
     let temp = cards.slice();
         for (let i = temp.length - 1;i > 0; i--){
@@ -15,7 +14,7 @@ const Board = (props) => {
         }
         setCards(temp)
     }
-    useEffect(random, [shuffle])
+    useEffect(random, [table])
     return(
         <div className="row">
             {cards}
