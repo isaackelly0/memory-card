@@ -12,8 +12,6 @@ const Board = (props) => {
             for(let i = 0; i < table.length - 1; i++){
                 if(table[i] === (table[table.length - 1])){
                     bool = false;
-                    //break;
-                    //console.log(table[i])
                 }
             }
             props.fn(bool)
@@ -26,7 +24,7 @@ const Board = (props) => {
                 let j = Math.floor(Math.random() * (i+1));
                 [temp[i], temp[j]] = [temp[j], temp[i]];
             }
-            setCards(temp) 
+        setCards(temp) 
     }
     useEffect(update, [table])
     return(
