@@ -30,9 +30,7 @@ const Board = (props) => {
     return(
         <div className="row">
             {cards}
-            {table}
-            
-        </div>
+          </div>
     )
 }
 export default Board

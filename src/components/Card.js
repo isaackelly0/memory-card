@@ -1,13 +1,11 @@
-import React, {useEffect} from "react";
+import "./Card.css";
 const Card = (props) => {
     const callBack = () => {
         props.sh(props.id)
-    };
-    useEffect(()=>{}, [])    
+    };   
     return(
-        <div className="col-3" id={props.id}>
-            <h1>{props.name}</h1>
-            <button onClick={callBack}>Change</button>
+        <div className="col-3 cat" id={props.id} onClick={callBack}>
+            <h4>{props.name}</h4>
         </div>
     )
 }
