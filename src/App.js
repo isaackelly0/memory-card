@@ -36,9 +36,13 @@ class App extends Component {
     this.compareScore(this.state.score, this.state.bestScore);
   }
   render(){return (
-    <div className="App">
-      <header><h1>{this.state.score}</h1><h1>{this.state.bestScore}</h1></header>
-      <span id="deck" className="container">
+    <div className="App container">
+      <header className="row">
+        <h1 className="col-sm-12 col-lg-8">Try not to click the same card twice!</h1> 
+        <h3 className="col-sm-12 col-md-6 col-lg-2">Score:{this.state.score}</h3> 
+        <h3 className="col-sm-12 col-md-6 col-lg-2">High score:{this.state.bestScore}</h3> 
+      </header>
+      <span id="deck">
       </span>
     </div>
   );}
