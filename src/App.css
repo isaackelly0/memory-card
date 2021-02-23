@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 .App {
   text-align: center;
 }
@@ -37,7 +38,10 @@
   }
 }
 header{
-  display: flex;
-  justify-content: space-around;
+  position:absolute;
+  top: -2em;
+  font-family: 'DotGothic16', sans-serif;
+  color: aliceblue;
   align-items: center;
+  margin-bottom: 3em;
 }
