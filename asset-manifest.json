@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.f8cbdc50.chunk.css",
+    "main.js": "/memory-card/static/js/main.74f837e3.chunk.js",
+    "main.js.map": "/memory-card/static/js/main.74f837e3.chunk.js.map",
+    "runtime-main.js": "/memory-card/static/js/runtime-main.e60de1de.js",
+    "runtime-main.js.map": "/memory-card/static/js/runtime-main.e60de1de.js.map",
+    "static/js/2.ec55ed44.chunk.js": "/memory-card/static/js/2.ec55ed44.chunk.js",
+    "static/js/2.ec55ed44.chunk.js.map": "/memory-card/static/js/2.ec55ed44.chunk.js.map",
+    "index.html": "/memory-card/index.html",
+    "static/css/main.f8cbdc50.chunk.css.map": "/memory-card/static/css/main.f8cbdc50.chunk.css.map",
+    "static/js/2.ec55ed44.chunk.js.LICENSE.txt": "/memory-card/static/js/2.ec55ed44.chunk.js.LICENSE.txt",
+    "static/media/Azorius.0ddabaf6.png": "/memory-card/static/media/Azorius.0ddabaf6.png",
+    "static/media/Boros.813879e2.png": "/memory-card/static/media/Boros.813879e2.png",
+    "static/media/Golgari.1a01636c.png": "/memory-card/static/media/Golgari.1a01636c.png",
+    "static/media/Gruul.a15896a4.png": "/memory-card/static/media/Gruul.a15896a4.png",
+    "static/media/Izzet.a35cc151.png": "/memory-card/static/media/Izzet.a35cc151.png",
+    "static/media/Orzhov.8374e8d0.png": "/memory-card/static/media/Orzhov.8374e8d0.png",
+    "static/media/Rakdos.50778396.png": "/memory-card/static/media/Rakdos.50778396.png",
+    "static/media/Selesnya.ab8bb25f.png": "/memory-card/static/media/Selesnya.ab8bb25f.png",
+    "static/media/Simic.59847c42.png": "/memory-card/static/media/Simic.59847c42.png",
+    "static/media/colorless.48818a4b.png": "/memory-card/static/media/colorless.48818a4b.png",
+    "static/media/mtg-black.ee0015e9.png": "/memory-card/static/media/mtg-black.ee0015e9.png",
+    "static/media/mtg-blue.f24a9c2b.png": "/memory-card/static/media/mtg-blue.f24a9c2b.png",
+    "static/media/mtg-green.7ac3b9d8.png": "/memory-card/static/media/mtg-green.7ac3b9d8.png",
+    "static/media/mtg-red.56aaa7b3.png": "/memory-card/static/media/mtg-red.56aaa7b3.png",
+    "static/media/mtg-white.6fbb0818.png": "/memory-card/static/media/mtg-white.6fbb0818.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e60de1de.js",
+    "static/js/2.ec55ed44.chunk.js",
+    "static/css/main.f8cbdc50.chunk.css",
+    "static/js/main.74f837e3.chunk.js"
+  ]
+}
